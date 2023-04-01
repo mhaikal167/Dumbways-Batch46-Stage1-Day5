@@ -150,10 +150,10 @@ button:hover {
     background-color: #c0731c;
 }
 
-.submit {
+.submit button{
     display: flex;
-    justify-content: flex-end;
-
+    justify-content: space-between;
+    margin: auto;
 }
 
 .main-card {

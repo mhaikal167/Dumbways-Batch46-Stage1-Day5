@@ -53,10 +53,18 @@ function getProject(event) {
         typescript
     }
     listproject.push(blog);
-    console.log(listproject);
     renderProject();
 }
-
+function resetForm(){
+    document.getElementById("project-name").value = ""
+    document.getElementById("project-start").value = ""
+    document.getElementById("project-end").value = ""
+    document.getElementById("project-desc").value = ""
+    document.getElementById("node").checked = false
+    document.getElementById("react").checked = false
+    document.getElementById("next").checked = false
+    document.getElementById("typescript").checked = false
+}
 function renderProject() {
     document.getElementById("project-list").innerHTML = ""
     if(listproject.length == 0) {
